@@ -8,10 +8,10 @@ I set up GitHub Pages to point to the docs folder. From there, I can create and 
 
 ```shell
 $ # cd your project folder
-$ helm create mychart # create your helm release files
-$ helm package mychart # package helm files to .tgz zip files
-$ mv <project-folder>/mychart-0.1.0.tgz chart-repo/docs
-$ helm repo index docs --url https://wang-kk714.github.io/chart-repo/ # generate index.yaml
+$ helm package mychart # package helm files to .tgz files
+$ # move package file to gh-pages brach
+$ helm repo index ./ --url https://wang-kk714.github.io/min-flask-charts/ # generate index.yaml
 ```
 
-From there, I can do a `helm repo add <alias> https://wang-kk714.github.io/chart-repo/`
+Then, you can upload tgz file and index.yaml to repo.
+From there, I can do a `helm repo add <alias> https://wang-kk714.github.io/min-flask-charts/`
