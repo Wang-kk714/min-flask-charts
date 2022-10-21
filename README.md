@@ -7,13 +7,11 @@ This is an charts repository for min-flask helm release.
 I set up GitHub Pages to point to the docs folder. From there, I can create and publish docs like this:
 
 ```shell
-$ helm create mychart
-$ helm package mychart
-$ mv mychart-0.1.0.tgz docs
-$ helm repo index docs --url <chart-repo-url>
-$ git add -i
-$ git commit -av
-$ git push origin master
+$ # cd your project folder
+$ helm create mychart # create your helm release files
+$ helm package mychart # package helm files to .tgz zip files
+$ mv <project-folder>/mychart-0.1.0.tgz chart-repo/docs
+$ helm repo index docs --url https://wang-kk714.github.io/chart-repo/ # generate index.yaml
 ```
 
-From there, I can do a `helm repo add <chart-name> <chart-repo-url>`
+From there, I can do a `helm repo add <my-chart-repo> https://wang-kk714.github.io/chart-repo/`
