@@ -9,7 +9,6 @@ I set up GitHub Pages to point to the docs folder. From there, I can create and 
 ```shell
 $ # cd your project folder
 $ helm package mychart # package helm files to .tgz files
-$ # move package file to gh-pages brach
 $ helm repo index ./ --url https://wang-kk714.github.io/min-flask-charts/ # generate index.yaml
 ```
 
