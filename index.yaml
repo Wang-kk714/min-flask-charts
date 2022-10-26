@@ -3,12 +3,12 @@ entries:
   min-flask:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-26T15:14:25.527622751Z"
+    created: "2022-10-26T15:16:52.8158085Z"
     description: A Helm chart for min-flask project
-    digest: e899ca8a10a845a18287a80d71f8d32b69682dfa366cbd67250f5fb6985745c4
+    digest: 3d90050e71f37319a4a39ebd5c7ac4cf1b28f075b858c24f6f4655422684650c
     name: min-flask
     type: application
     urls:
     - https://wang-kk714.github.io/min-flask-charts/min-flask-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-26T15:14:25.527017501Z"
+generated: "2022-10-26T15:16:52.815340083Z"
